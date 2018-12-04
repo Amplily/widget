@@ -174,7 +174,7 @@ window.setupAmplilyWidget = function (options) {
         
         let slides = 0;
         let cMoments = jQuery('.moment').length;
-        if (cMoments) slides = cMoments > 3 ? 3 : cMoments;
+        if (cMoments) slides = cMoments > 2 ? 2 : cMoments;
 
         if (slides > 0) {
 
@@ -187,7 +187,7 @@ window.setupAmplilyWidget = function (options) {
                 let responsive = [{
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: Math.min(3, slides),
+                        slidesToShow: Math.min(2, slides),
                         slidesToScroll: 1
                     }
                 }, {
